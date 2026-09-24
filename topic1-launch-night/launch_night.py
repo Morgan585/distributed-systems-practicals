@@ -5,6 +5,11 @@ game_services = [
     {"name": "In-game Mail", "status": "online"}
 ]
 
+def warning():
+    """Display a warning message if any services are offline."""
+    offline_services = count_offline_services(game_services)
+    if offline_services > 0:
+        print("\nWARNING: Some services are offline!")
 
 def display_services(services):
     """Display the name and status of every game service."""
@@ -28,6 +33,7 @@ print("LAUNCH NIGHT SERVICE MONITOR")
 print("=" * 28)
 
 display_services(game_services)
+warning()
 
 offline_services = count_offline_services(game_services)
 print(f"\nOffline services: {offline_services}")
