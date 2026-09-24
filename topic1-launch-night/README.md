@@ -202,7 +202,7 @@ Open this `README.md` file and replace the line below with one or two sentences 
 
 ### Why is Git distributed?
 
-Write your answer here.
+Git is a distributed version control system because every developer who clones a repository gets a full copy of the entire project history, rather than just a single snapshot of the current files.
 
 Save the README, then run:
 
