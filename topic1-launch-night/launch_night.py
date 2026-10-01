@@ -10,6 +10,8 @@ def warning():
     offline_services = count_offline_services(game_services)
     if offline_services > 0:
         print("\nWARNING: Some services are offline!")
+    else:
+        print("\nAll services are online.")
 
 def display_services(services):
     """Display the name and status of every game service."""
